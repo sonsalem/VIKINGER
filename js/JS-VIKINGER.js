@@ -1,18 +1,30 @@
+// Meta Description
+let metaDec = document.createElement('meta');
+metaDec.setAttribute('name', 'description');
+metaDec.setAttribute('content', 'Viginger For Steamers');
+
+let head = document.querySelector('head');
+
+head.prepend(metaDec)
+
 // Start Drak Theme
-document.write(`  <div class="position-fixed rounded-circle bg-white box-shadow pointer t-duratio d-flex align-items-center justify-content-center" id="drak-theme">
-<i class="fa-solid fa-moon" id="dark-ico"></i>
-</div>`)
+let darkElement = document.createElement('div');
+darkElement.className = 'position-fixed rounded-circle bg-white box-shadow pointer t-duratio d-flex align-items-center justify-content-center';
+darkElement.id = 'drak-theme';
+
+let darkI = document.createElement('i');
+darkI.className = 'fa-solid fa-moon';
+darkI.id = 'dark-ico';
+
+darkElement.appendChild(darkI);
+
+document.body.appendChild(darkElement);
 
 let dark = document.getElementById('drak-theme');
 let all = document.querySelectorAll('*');
-let darkIco = document.getElementById('dark-ico')
+let darkIco = document.getElementById('dark-ico');
 
-dark.onclick = function () {
-    if(darkIco.classList.contains('fa-moon')) {
-        darkIco.classList.replace('fa-moon' , 'fa-sun')
-    } else {
-        darkIco.classList.replace('fa-sun' , 'fa-moon')
-    }
+let darkFun = function () {
     all.forEach(function (el) {
         if (el.classList.contains('bg-white') === true) {
             el.classList.toggle('bg-white-dark')
@@ -21,17 +33,34 @@ dark.onclick = function () {
             el.classList.toggle('c-fff')
         }
     })
+    document.body.classList.toggle('body-dark')
+    document.querySelector('.sidebar-message .chat-write').classList.toggle('body-dark')
+    document.querySelectorAll('.chat-write .me .message').forEach(el => el.classList.toggle('bg-white-dark'));
+    document.querySelectorAll('.comments-post .box:nth-child(even)').forEach(el => el.classList.toggle('body-dark'));
+    document.querySelectorAll('.setting .set > .box .links').forEach(el => el.classList.toggle('body-dark'));
+    document.querySelectorAll('.form-input label').forEach(el => el.classList.toggle('body-dark'));
+    document.querySelectorAll('textarea').forEach(el => el.classList.toggle('bg-white-dark'));
+    document.querySelectorAll('div[role="progressbar"]').forEach(el => el.classList.toggle('dark'));
 }
-$(dark).click(function(){
-    $(document.body).toggleClass('body-dark')
-    $(`.sidebar-message .chat-write`).toggleClass('body-dark')
-    $(`.chat-write .me .message`).toggleClass('bg-white-dark')
-    $(`.comments-post .box:nth-child(even)`).toggleClass('body-dark')
-    $(`.setting .set > .box .links`).toggleClass('body-dark')
-    $(document.querySelectorAll('.form-input label')).toggleClass('body-dark')
-    $(document.querySelectorAll('textarea')).toggleClass('bg-white-dark')
-    $('div[role="progressbar"]').toggleClass('dark')
-});
+
+
+dark.onclick = function () {
+    localStorage.getItem('theme') === 'dark'
+    ? localStorage.setItem('theme', 'light')
+    : localStorage.setItem('theme', 'dark');
+    if(darkIco.classList.contains('fa-moon')) {
+        darkIco.classList.replace('fa-moon' , 'fa-sun')
+    } else {
+        darkIco.classList.replace('fa-sun' , 'fa-moon')
+    }
+    darkFun();
+}
+
+if (localStorage.getItem('theme') === 'dark') {
+    darkIco.classList.replace('fa-sun' , 'fa-moon');
+    darkFun();
+}
+
 // End Drak Theme
 
 $('.toggle-links.open').click(function(){
@@ -43,7 +72,7 @@ $('.toggle-links.close').click(function(){
     $('#aside').removeClass('active')
     $('.body').removeClass('active')
 });
-$('.mega-open').click(function(){
+$('.mega-open:not(.active)').click(function(){
     $(this).toggleClass('active')
     $('.upper-nav').toggleClass('active')
 })
@@ -92,7 +121,7 @@ $('.toggle-side-message').click(function(){
 
 $('.form-input').click(function(){
     $(this).addClass('active')
-}); 
+});
 $('.check').click(function(){
     $(document.querySelectorAll('.check')).removeClass('active')
     $(this).toggleClass('active')
@@ -106,6 +135,24 @@ $('.toggle-check').click(function(){
     $(this).toggleClass('active')
 });
 
+document.querySelectorAll('.open-close').forEach(function (el) {
+    el.onclick = function () {
+        this.classList.toggle('collasp')
+        this.nextElementSibling.classList.toggle('show')
+    }
+})
+// ALt Images && href Links
+let imgs = document.images;
+
+for (let i = 0; i < imgs.length; i++) {
+    imgs[i].setAttribute('alt', `It's An Imae`)
+}
+
+let links = document.links;
+
+document.querySelectorAll('.button').forEach(function (el) {
+    el.href == "" && el.setAttribute('href', "google.com")
+})
 
 //carousel
 
@@ -165,5 +212,44 @@ openImg.forEach(function (el) {
     el.onclick = function () {
         this.classList.toggle('active')
         document.body.classList.toggle('cuurent-before')
+    }
+})
+
+let allBoxes = document.querySelectorAll('.box-photo');
+let allImages = document.querySelectorAll('.box-photo-mega');
+
+allBoxes.forEach(function(ele) {
+    ele.onclick = function() {
+        document.body.classList.add('cuurent-before')
+        allImages.forEach(function (el) {
+            if (el.id === ele.id) {
+                el.classList.add('show')
+            } else {
+                el.classList.remove('show')
+            }
+        })
+    }
+})
+
+let openImgMega = document.querySelectorAll('.box-photo-mega .open-img');
+
+openImgMega.forEach(function (el) {
+    el.onclick = function () {
+        this.classList.toggle('active')
+        document.body.classList.add('cuurent-before')
+        allImages.forEach(function (ele) {
+            ele.classList.toggle('bg-black')
+        })
+    }
+})
+
+let closeMega = document.querySelectorAll('.box-photo-mega .close-mega');
+
+closeMega.forEach(function (el) {
+    el.onclick = function () {
+        allImages.forEach(function (ele) {
+            ele.classList.remove('show')
+        })
+        document.body.classList.remove('cuurent-before')
     }
 })

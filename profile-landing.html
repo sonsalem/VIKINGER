@@ -939,11 +939,11 @@
   <div class="shuffle-bar mb-4">
     <div class="container">
       <div class="owl-carousel owl-theme owl-shuffleBar bg-white rounded-10 overflow-hidden">
-        <div class="item d-flex align-items-center justify-content-center flex-column pointer active" id="about">
+        <div class="item d-flex align-items-center justify-content-center flex-column pointer" id="about">
           <i class="fa-regular fa-circle-user c-gray fs-20"></i>
           <span class="font-weight-bold">About</span>
         </div>
-        <div class="item d-flex align-items-center justify-content-center flex-column pointer" id="timeline">
+        <div class="item d-flex align-items-center justify-content-center flex-column pointer active" id="timeline">
           <i class="fa-solid fa-table-columns c-gray fs-20"></i>
           <span class="font-weight-bold">Timeline</span>
         </div>
@@ -991,7 +991,7 @@
   <div class="proflile-contents pb-5">
     <div class="container">
       <!-- Start About -->
-      <div class="contents about" id="about">
+      <div class="contents about d-none" id="about">
         <div class="row">
           <div class="col-xl-3 firts-col">
             <div class="p-4 rounded-10 bg-white mb-4">
@@ -1113,7 +1113,7 @@
           </div>
           <div class="col-xl-3 third-col">
             <div class="p-4 bg-white rounded-10 mb-4">
-              <div role="progressbar" aria-valuemax="100" style="--value:59" class="mx-auto mb-4"></div>
+              <div role="progressbar" aria-label="progressbar" aria-valuemax="100" style="--value:59" class="mx-auto mb-4"></div>
               <div class="text-center mb-4">
                 <div class="font-weight-bold fs-20">Profile Completion</div>
                 <span class="c-gray fs-14">Son Salem</span>
@@ -1182,7 +1182,7 @@
       </div>
       <!-- End About -->
       <!-- Start Timeline -->
-      <div class="contents timeline d-none" id="timeline">
+      <div class="contents timeline" id="timeline">
         <div class="row">
           <div class="col-xl-3 col-lg-5 d-none d-lg-block">
             <div class="p-4 rounded-10 bg-white mb-4">
@@ -1326,21 +1326,21 @@
             </div>
             <div class="p-4 rounded-10 bg-white mb-4">
               <div class="font-weight-bold mb-4">Videos <span class="c-primary">7</span></div>
-              <div class="video-box rounded-10 w-100 position-relative overflow-hidden pointer px-4 d-flex flex-column justify-content-end mb-3" style="--bg: url(../img/cover08.jpg)">
+              <div class="video-box main-bg rounded-10 w-100 position-relative overflow-hidden pointer px-4 d-flex flex-column justify-content-end mb-3" style="--bg: url(../img/cover08.jpg)">
                 <div class="play-button t-duration d-flex align-items-center justify-content-center">
                   <i class="fa-solid fa-play c-white"></i>
                 </div>
                 <div class="m-0 c-white t-duration font-weight-bold text-truncate fs-14 text">Mochi's Island Story Mode</div>
                 <div class="m-0 c-white t-duration text-truncate fs-14 text mb-2">1 days ago</div>
               </div>
-              <div class="video-box rounded-10 w-100 position-relative overflow-hidden pointer px-4 d-flex flex-column justify-content-end mb-3" style="--bg: url(../img/cove09.jpg)">
+              <div class="video-box main-bg rounded-10 w-100 position-relative overflow-hidden pointer px-4 d-flex flex-column justify-content-end mb-3" style="--bg: url(../img/cove09.jpg)">
                 <div class="play-button t-duration d-flex align-items-center justify-content-center">
                   <i class="fa-solid fa-play c-white"></i>
                 </div>
                 <div class="m-0 c-white t-duration font-weight-bold text-truncate fs-14 text">Sunset Cowboys - Walkthrough</div>
                 <div class="m-0 c-white t-duration text-truncate fs-14 text mb-2">3 days ago</div>
               </div>
-              <div class="video-box rounded-10 w-100 position-relative overflow-hidden pointer px-4 d-flex flex-column justify-content-end mb-3" style="--bg: url(../img/cove05.jpg)">
+              <div class="video-box main-bg rounded-10 w-100 position-relative overflow-hidden pointer px-4 d-flex flex-column justify-content-end mb-3" style="--bg: url(../img/cove05.jpg)">
                 <div class="play-button t-duration d-flex align-items-center justify-content-center">
                   <i class="fa-solid fa-play c-white"></i>
                 </div>
@@ -1351,35 +1351,35 @@
             <div class="p-4 rounded-10 bg-white mb-4">
               <div class="font-weight-bold mb-4">Blogs <span class="c-primary">5</span></div>
               <div class="d-flex blog mb-3">
-                <figure style="--bg:url(../img/19.jpg)" class="me-2 rounded"></figure>
+                <figure style="--bg:url(../img/19.jpg)" class="me-2 rounded main-bg"></figure>
                 <div class="text">
                   <div class="fs-14 font-weight-bold">Here's the how and why did I became a full time Gaming Streamer</div>
                   <div class="fs-12 c-gray">6 days ago</div>
                 </div>
               </div>
               <div class="d-flex blog mb-3">
-                <figure style="--bg:url(../img/cover06.jpg)" class="me-2 rounded"></figure>
+                <figure style="--bg:url(../img/cover06.jpg)" class="me-2 rounded main-bg"></figure>
                 <div class="text">
                   <div class="fs-14 font-weight-bold">I spoke with the developers of RoBot SaMurai II at the 2019 GamingCon</div>
                   <div class="fs-12 c-gray">4 days ago</div>
                 </div>
               </div>
               <div class="d-flex blog mb-3">
-                <figure style="--bg:url(../img/cover07.jpg)" class="me-2 rounded"></figure>
+                <figure style="--bg:url(../img/cover07.jpg)" class="me-2 rounded main-bg"></figure>
                 <div class="text">
                   <div class="fs-14 font-weight-bold">I will be at this month's StreamCon with NekoBebop</div>
                   <div class="fs-12 c-gray">3 days ago</div>
                 </div>
               </div>
               <div class="d-flex blog mb-3">
-                <figure style="--bg:url(../img/cover10.jpg)" class="me-2 rounded"></figure>
+                <figure style="--bg:url(../img/cover10.jpg)" class="me-2 rounded main-bg"></figure>
                 <div class="text">
                   <div class="fs-14 font-weight-bold">[Exclusive!] Check out all the new missions and story of the Fire Witch DLC!</div>
                   <div class="fs-12 c-gray">1 days ago</div>
                 </div>
               </div>
               <div class="d-flex blog mb-3">
-                <figure style="--bg:url(../img/cove05.jpg)" class="me-2 rounded"></figure>
+                <figure style="--bg:url(../img/cove05.jpg)" class="me-2 rounded main-bg"></figure>
                 <div class="text">
                   <div class="fs-14 font-weight-bold">Old Super Mochi's Island is getting a remake!</div>
                   <div class="fs-12 c-gray">1 days ago</div>
@@ -1704,8 +1704,7 @@
           <div class="col-xl-3 d-none d-xl-block">
             <div class="rounded-10 py-4 bg-white mb-4">
               <div class="font-weight-bold mb-4 px-4">Stream Box</div>
-              <iframe autocapitalize="true" width="100%" height="200" src="https://www.youtube.com/embed/dijaeWNKHIw?autoplay=1&mute=1">
-              </iframe>
+              <iframe autocapitalize="true" width="100%" height="200" src="https://www.youtube.com/embed/dijaeWNKHIw"></iframe>
               <div class="rounded-circle p-1 w-fit bg-primary mx-4" style="margin-top: -29px;">
                 <img src="img/nft_avatar03.png" alt="" width="50px" class="rounded-circle">
               </div>
@@ -1838,7 +1837,7 @@
         <div class="row justify-content-center">
           <div class="col-xl-4 col-lg-6 mb-4">
             <div class="freiend-box bg-white rounded-10 overflow-hidden">
-              <figure style="--bg: url(../img/cover08.jpg)" class="d-block m-0"></figure>
+              <figure style="--bg: url(../img/cover08.jpg)" class="d-block main-bg  m-0"></figure>
               <div class="img-person big-img rounded-circle position-relative mb-3 t-duration mx-auto d-flex flex-grow-1 align-items-center justify-content-center w-fit">
                 <img src="img/insta01.jpg" class="img-fluid rounded-circle t-duration-de">
                 <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12 t-duration-de">12</div>
@@ -1892,7 +1891,7 @@
           </div>
           <div class="col-xl-4 col-lg-6 mb-4">
             <div class="freiend-box bg-white rounded-10 overflow-hidden">
-              <figure style="--bg: url(../img/cover07.jpg)" class="d-block m-0"></figure>
+              <figure style="--bg: url(../img/cover07.jpg)" class="d-block main-bg  m-0"></figure>
               <div class="img-person big-img rounded-circle position-relative mb-3 t-duration mx-auto d-flex flex-grow-1 align-items-center justify-content-center w-fit">
                 <img src="img/insta03.jpg" class="img-fluid rounded-circle t-duration-de">
                 <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12 t-duration-de">52</div>
@@ -1952,7 +1951,7 @@
           </div>
           <div class="col-xl-4 col-lg-6 mb-4">
             <div class="freiend-box bg-white rounded-10 overflow-hidden">
-              <figure style="--bg: url(../img/cove09.jpg)" class="d-block m-0"></figure>
+              <figure style="--bg: url(../img/cove09.jpg)" class="d-block  main-bg m-0"></figure>
               <div class="img-person big-img rounded-circle position-relative mb-3 t-duration mx-auto d-flex flex-grow-1 align-items-center justify-content-center w-fit">
                 <img src="img/insta04.jpg" class="img-fluid rounded-circle t-duration-de">
                 <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12 t-duration-de">12</div>
@@ -2012,7 +2011,7 @@
           </div>
           <div class="col-xl-4 col-lg-6 mb-4">
             <div class="freiend-box bg-white rounded-10 overflow-hidden">
-              <figure style="--bg: url(../img/cover08.jpg)" class="d-block m-0"></figure>
+              <figure style="--bg: url(../img/cover08.jpg)" class="d-block main-bg  m-0"></figure>
               <div class="img-person big-img rounded-circle position-relative mb-3 t-duration mx-auto d-flex flex-grow-1 align-items-center justify-content-center w-fit">
                 <img src="img/insta01.jpg" class="img-fluid rounded-circle t-duration-de">
                 <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12 t-duration-de">12</div>
@@ -2066,7 +2065,7 @@
           </div>
           <div class="col-xl-4 col-lg-6 mb-4">
             <div class="freiend-box bg-white rounded-10 overflow-hidden">
-              <figure style="--bg: url(../img/cover07.jpg)" class="d-block m-0"></figure>
+              <figure style="--bg: url(../img/cover07.jpg)" class="d-block main-bg  m-0"></figure>
               <div class="img-person big-img rounded-circle position-relative mb-3 t-duration mx-auto d-flex flex-grow-1 align-items-center justify-content-center w-fit">
                 <img src="img/insta03.jpg" class="img-fluid rounded-circle t-duration-de">
                 <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12 t-duration-de">52</div>
@@ -2126,7 +2125,7 @@
           </div>
           <div class="col-xl-4 col-lg-6 mb-4">
             <div class="freiend-box bg-white rounded-10 overflow-hidden">
-              <figure style="--bg: url(../img/cove09.jpg)" class="d-block m-0"></figure>
+              <figure style="--bg: url(../img/cove09.jpg)" class="d-block  main-bg m-0"></figure>
               <div class="img-person big-img rounded-circle position-relative mb-3 t-duration mx-auto d-flex flex-grow-1 align-items-center justify-content-center w-fit">
                 <img src="img/insta04.jpg" class="img-fluid rounded-circle t-duration-de">
                 <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12 t-duration-de">12</div>
@@ -2186,7 +2185,7 @@
           </div>
           <div class="col-xl-4 col-lg-6 mb-4">
             <div class="freiend-box bg-white rounded-10 overflow-hidden">
-              <figure style="--bg: url(../img/cover08.jpg)" class="d-block m-0"></figure>
+              <figure style="--bg: url(../img/cover08.jpg)" class="d-block main-bg  m-0"></figure>
               <div class="img-person big-img rounded-circle position-relative mb-3 t-duration mx-auto d-flex flex-grow-1 align-items-center justify-content-center w-fit">
                 <img src="img/insta01.jpg" class="img-fluid rounded-circle t-duration-de">
                 <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12 t-duration-de">12</div>
@@ -2240,7 +2239,7 @@
           </div>
           <div class="col-xl-4 col-lg-6 mb-4">
             <div class="freiend-box bg-white rounded-10 overflow-hidden">
-              <figure style="--bg: url(../img/cover07.jpg)" class="d-block m-0"></figure>
+              <figure style="--bg: url(../img/cover07.jpg)" class="d-block main-bg  m-0"></figure>
               <div class="img-person big-img rounded-circle position-relative mb-3 t-duration mx-auto d-flex flex-grow-1 align-items-center justify-content-center w-fit">
                 <img src="img/insta03.jpg" class="img-fluid rounded-circle t-duration-de">
                 <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12 t-duration-de">52</div>
@@ -2300,7 +2299,7 @@
           </div>
           <div class="col-xl-4 col-lg-6 mb-4">
             <div class="freiend-box bg-white rounded-10 overflow-hidden">
-              <figure style="--bg: url(../img/cove09.jpg)" class="d-block m-0"></figure>
+              <figure style="--bg: url(../img/cove09.jpg)" class="d-block  main-bg m-0"></figure>
               <div class="img-person big-img rounded-circle position-relative mb-3 t-duration mx-auto d-flex flex-grow-1 align-items-center justify-content-center w-fit">
                 <img src="img/insta04.jpg" class="img-fluid rounded-circle t-duration-de">
                 <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12 t-duration-de">12</div>
@@ -2395,7 +2394,7 @@
         <div class="row justify-content-center">
           <div class="col-xl-4 col-lg-6 mb-4">
             <div class="group-box bg-white rounded-10 overflow-hidden position-relative">
-              <figure style="--bg: url(../img/29.jpg)" class="d-block m-0"></figure>
+              <figure style="--bg: url(../img/29.jpg)" class="d-block m-0 main-bg"></figure>
               <div class="flag flag-group position-absolute bg-white box-shadow d-flex align-items-center justify-content-center rounded-10">
                 <i class="fa-regular fa-flag c-primary fs-20"></i>
               </div>
@@ -2437,7 +2436,7 @@
           </div>
           <div class="col-xl-4 col-lg-6 mb-4">
             <div class="group-box bg-white rounded-10 overflow-hidden position-relative">
-              <figure style="--bg: url(../img/cover08.jpg)" class="d-block m-0"></figure>
+              <figure style="--bg: url(../img/cover08.jpg)" class="d-block m-0 main-bg"></figure>
               <div class="flag flag-group position-absolute bg-white box-shadow d-flex align-items-center justify-content-center rounded-10">
                 <i class="fa-solid fa-earth-americas c-primary fs-20"></i>
               </div>
@@ -2480,19 +2479,1288 @@
         </div>
       </div>
       <!-- End Gruop -->
-    </div>
+      <!-- Start Photos -->
+      <div class="contents photo d-none" id="photo">
+        <div class="c-gray fs-14 font-weight-bold text-uppercase">BROWSE MARINA'S</div>
+        <h2 class="font-weight-bold mb-3">Photo Albums</h2>
+        <div class="grid-4 mb-4">
+          <div class="box-photo rounded-10 overflow-hidden position-relative t-duration pointer main-bg " id="profile" style="--bg: url(../img/cover-01.jpg)">
+            <div class="w-100 h-100 d-flex flex-column justify-content-end p-4">
+              <div class="font-weight-bold c-white">Profile Photos</div>
+              <div class="fs-14 c-white">Updated 12 days ago</div>
+            </div>
+            <div class="position-absolute px-3 rounded-5 c-white bg-dark fs-14 font-weight-bold number-of-negaPhoto">7</div>
+          </div>
+          <div class="box-photo-mega t-duration p-4 bg-white d-flex gap-15 align-content-start overflow-auto scroll rounded-10 flex-wrap justify-content-center" id="profile">
+            <div class="close-mega rounded-10 d-flex align-items-center justify-content-center pointer bg-dark bg-dark-hover t-duration position-absolute">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover-01.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover02.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover07.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover08.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover04 .jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cove09.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cove05.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+          </div>
+          <div class="box-photo rounded-10 overflow-hidden position-relative t-duration pointer main-bg " id="timeline" style="--bg: url(../img/cove05.jpg)">
+            <div class="w-100 h-100 d-flex flex-column justify-content-end p-4">
+              <div class="font-weight-bold c-white">Timeline Photos</div>
+              <div class="fs-14 c-white">Updated 4 mothes ago</div>
+            </div>
+            <div class="position-absolute px-3 rounded-5 c-white bg-dark fs-14 font-weight-bold number-of-negaPhoto">14</div>
+          </div>
+          <div class="box-photo-mega t-duration p-4 bg-white d-flex gap-15 align-content-start overflow-auto scroll rounded-10 flex-wrap justify-content-center" id="timeline">
+            <div class="close-mega rounded-10 d-flex align-items-center justify-content-center pointer bg-dark bg-dark-hover t-duration position-absolute">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover-01.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover02.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover07.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover08.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover04 .jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cove09.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cove05.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/21.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover02.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover15.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover16.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/22.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/23.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/24.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+          </div>
+          <div class="box-photo rounded-10 overflow-hidden position-relative t-duration pointer main-bg " id="steam" style="--bg: url(../img/23.jpg)">
+            <div class="w-100 h-100 d-flex flex-column justify-content-end p-4">
+              <div class="font-weight-bold c-white">Timeline Photos</div>
+              <div class="fs-14 c-white">Updated 1 monthes ago</div>
+            </div>
+            <div class="position-absolute px-3 rounded-5 c-white bg-dark fs-14 font-weight-bold number-of-negaPhoto">36</div>
+          </div>
+          <div class="box-photo-mega t-duration p-4 bg-white d-flex gap-15 align-content-start overflow-auto scroll rounded-10 flex-wrap justify-content-center" id="steam">
+            <div class="close-mega rounded-10 d-flex align-items-center justify-content-center pointer bg-dark bg-dark-hover t-duration position-absolute">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover-01.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover02.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover07.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover08.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover04 .jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cove09.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cove05.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/21.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover02.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover15.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover16.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/22.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/23.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/24.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/25.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/26jpg.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover-01.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover02.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover07.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover08.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover04 .jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cove09.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cove05.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/21.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover02.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover15.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover16.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/22.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/23.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/24.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/25.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/26jpg.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+          </div>
+          <div class="box-photo rounded-10 overflow-hidden position-relative t-duration pointer main-bg " id="gaming" style="--bg: url(../img/cover06.jpg)">
+            <div class="w-100 h-100 d-flex flex-column justify-content-end p-4">
+              <div class="font-weight-bold c-white">Gamin Photos</div>
+              <div class="fs-14 c-white">Updated 3 days ago</div>
+            </div>
+            <div class="position-absolute px-3 rounded-5 c-white bg-dark fs-14 font-weight-bold number-of-negaPhoto">11</div>
+          </div>
+          <div class="box-photo-mega t-duration p-4 bg-white d-flex gap-15 align-content-start overflow-auto scroll rounded-10 flex-wrap justify-content-center" id="gaming">
+            <div class="close-mega rounded-10 d-flex align-items-center justify-content-center pointer bg-dark bg-dark-hover t-duration position-absolute">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/22.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/23.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/24.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/21.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/25.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover-01.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover02.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover07.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover08.jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+            <div class="open-img w-fit position-relative rounded-10 overflow-hidden pointer">
+              <img src="img/cover04 .jpg" alt="it's an image" class="w-100 h-100 obf-cover">
+            </div>
+          </div>
+        </div>
+        <div class="c-gray fs-14 font-weight-bold text-uppercase">BROWSE MARINA'S</div>
+        <h2 class="font-weight-bold mb-3">Latest Photos</h2>
+        <div class="d-flex flex-wrap gap-15 last-photo justify-content-center">
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/cover06.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/cover07.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/cover08.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/cover10.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/cover04 .jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/cove05.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/21.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/22.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/23.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/24.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/25.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/26jpg.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/cover06.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/cover07.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/cover08.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/cover10.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/cover04 .jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/cove05.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/21.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/22.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/23.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/24.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/25.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="open-img position-relative rounded-10 overflow-hidden pointer">
+            <img src="img/26jpg.jpg" alt="" class="w-100 h-100">
+          </div>
+        </div>
+      </div>
+      <!-- End Photos -->
+      <!-- Start Videos -->
+      <div class="contents videos d-none" id="videos">
+        <div class="c-gray fs-14 font-weight-bold text-uppercase">BROWSE MARINA'S</div>
+        <h2 class="font-weight-bold mb-3">videos <span class="c-primary">6</span></h2>
+        <div class="grid-4">
+          <div class="box rounded-10 overflow-hidden">
+            <div class="video-box main-bg w-100 position-relative pointer" style="--bg: url(../img/cover08.jpg)">
+              <div class="play-button t-duration d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-play c-white"></i>
+              </div>
+            </div>
+            <div class="text px-4 py-3 bg-white">
+              <div class="m-0 t-duration font-weight-bold text-truncate fs-14">Mochi's Island Story Mode</div>
+              <div class="m-0 t-duration text-truncate fs-14">1 days ago</div>
+            </div>
+          </div>
+          <div class="box rounded-10 overflow-hidden">
+            <div class="video-box main-bg w-100 position-relative pointer" style="--bg: url(../img/cove09.jpg)">
+              <div class="play-button t-duration d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-play c-white"></i>
+              </div>
+            </div>
+            <div class="text px-4 py-3 bg-white">
+              <div class="m-0 t-duration font-weight-bold text-truncate fs-14">Sunset Cowboys - Walkthrough</div>
+              <div class="m-0 t-duration text-truncate fs-14">3 days ago</div>
+            </div>
+          </div>
+          <div class="box rounded-10 overflow-hidden">
+            <div class="video-box main-bg w-100 position-relative pointer" style="--bg: url(../img/cove05.jpg)">
+              <div class="play-button t-duration d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-play c-white"></i>
+              </div>
+            </div>
+            <div class="text px-4 py-3 bg-white">
+              <div class="m-0 t-duration font-weight-bold text-truncate fs-14">Quest of the Ogre II: The Revenge USA</div>
+              <div class="m-0 t-duration text-truncate fs-14">5 days ago</div>
+            </div>
+          </div>
+          <div class="box rounded-10 overflow-hidden">
+            <div class="video-box main-bg w-100 position-relative pointer" style="--bg: url(../img/26jpg.jpg)">
+              <div class="play-button t-duration d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-play c-white"></i>
+              </div>
+            </div>
+            <div class="text px-4 py-3 bg-white">
+              <div class="m-0 t-duration font-weight-bold text-truncate fs-14">GameCon 2019 Arcade Palace!</div>
+              <div class="m-0 t-duration text-truncate fs-14">5 days ago</div>
+            </div>
+          </div>
+          <div class="box rounded-10 overflow-hidden">
+            <div class="video-box main-bg w-100 position-relative pointer" style="--bg: url(../img/cover02.jpg)">
+              <div class="play-button t-duration d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-play c-white"></i>
+              </div>
+            </div>
+            <div class="text px-4 py-3 bg-white">
+              <div class="m-0 t-duration font-weight-bold text-truncate fs-14">Xenowatch New Character: Dinnay To Play ALone With</div>
+              <div class="m-0 t-duration text-truncate fs-14">1 week ago</div>
+            </div>
+          </div>
+          <div class="box rounded-10 overflow-hidden">
+            <div class="video-box main-bg w-100 position-relative pointer" style="--bg: url(../img/cove05.jpg)">
+              <div class="play-button t-duration d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-play c-white"></i>
+              </div>
+            </div>
+            <div class="text px-4 py-3 bg-white">
+              <div class="m-0 t-duration font-weight-bold text-truncate fs-14">Quest of the Ogre II: The Revenge USA</div>
+              <div class="m-0 t-duration text-truncate fs-14">5 days ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Videos -->
+      <!-- Strat Bageds -->
+      <div class="contents bages d-none" id="bages">
+        <div class="row">
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="d-flex bg-white rounded-10 p-4 flex-column flex-md-row text-center text-md-start align-items-center">
+              <div class="image me-md-3 mb-3 mb-md-0">
+                <img src="img/gold-b-big.png" alt="image" width="82px" height="90px">
+              </div>
+              <div class="text">
+                <div class="font-weight-bold fs-20 mb-1">Gold User</div>
+                <div class="mb-1">Has posted more than 500 posts on their profile</div>
+                <div class="fs-14 c-gray">UNLOCKED JAN 14TH, 2019</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="d-flex bg-white rounded-10 p-4 flex-column flex-md-row text-center text-md-start align-items-center">
+              <div class="image me-md-3 mb-3 mb-md-0">
+                <img src="img/warrior-b-big.png" alt="image" width="82px" height="90px">
+              </div>
+              <div class="text">
+                <div class="font-weight-bold fs-20 mb-1">The Warrior</div>
+                <div class="mb-1">Helped the team enforce the communty rules</div>
+                <div class="fs-14 c-gray">UNLOCKED JAN 14TH, 2019</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="d-flex bg-white rounded-10 p-4 flex-column flex-md-row text-center text-md-start align-items-center">
+              <div class="image me-md-3 mb-3 mb-md-0">
+                <img src="img/forumsf-s.png" alt="image" width="82px" height="90px">
+              </div>
+              <div class="text">
+                <div class="font-weight-bold fs-20 mb-1">Forum Traveller</div>
+                <div class="mb-1">Created at least 1 topic on 5 different groups forums</div>
+                <div class="fs-14 c-gray">UNLOCKED JAN 14TH, 2019</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="d-flex bg-white rounded-10 p-4 flex-column flex-md-row text-center text-md-start align-items-center">
+              <div class="image me-md-3 mb-3 mb-md-0">
+                <img src="img/age-b-big.png" alt="image" width="82px" height="90px">
+              </div>
+              <div class="text">
+                <div class="font-weight-bold fs-20 mb-1">Profile Age</div>
+                <div class="mb-1">Congratz! You've been part of the community for 2 years</div>
+                <div class="fs-14 c-gray">UNLOCKED JAN 14TH, 2019</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="d-flex bg-white rounded-10 p-4 flex-column flex-md-row text-center text-md-start align-items-center">
+              <div class="image me-md-3 mb-3 mb-md-0">
+                <img src="img/mightiers-b-big.png" alt="image" width="82px" height="90px">
+              </div>
+              <div class="text">
+                <div class="font-weight-bold fs-20 mb-1">Mightier Than Sword</div>
+                <div class="mb-1">Wrote at least 50 blog posts in their profile</div>
+                <div class="fs-14 c-gray">UNLOCKED JAN 14TH, 2019</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="d-flex bg-white rounded-10 p-4 flex-column flex-md-row text-center text-md-start align-items-center">
+              <div class="image me-md-3 mb-3 mb-md-0">
+                <img src="img/ncreature-b-big.png" alt="image" width="82px" height="90px">
+              </div>
+              <div class="text">
+                <div class="font-weight-bold fs-20 mb-1">Night Creature</div>
+                <div class="mb-1">Created 100+ posts between 1AM and 5AM</div>
+                <div class="fs-14 c-gray">UNLOCKED JAN 14TH, 2019</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="d-flex bg-white rounded-10 p-4 flex-column flex-md-row text-center text-md-start align-items-center">
+              <div class="image me-md-3 mb-3 mb-md-0">
+                <img src="img/gold-b-big.png" alt="image" width="82px" height="90px">
+              </div>
+              <div class="text">
+                <div class="font-weight-bold fs-20 mb-1">Gold User</div>
+                <div class="mb-1">Has posted more than 500 posts on their profile</div>
+                <div class="fs-14 c-gray">UNLOCKED JAN 14TH, 2019</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="d-flex bg-white rounded-10 p-4 flex-column flex-md-row text-center text-md-start align-items-center">
+              <div class="image me-md-3 mb-3 mb-md-0">
+                <img src="img/warrior-b-big.png" alt="image" width="82px" height="90px">
+              </div>
+              <div class="text">
+                <div class="font-weight-bold fs-20 mb-1">The Warrior</div>
+                <div class="mb-1">Helped the team enforce the communty rules</div>
+                <div class="fs-14 c-gray">UNLOCKED JAN 14TH, 2019</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="d-flex bg-white rounded-10 p-4 flex-column flex-md-row text-center text-md-start align-items-center">
+              <div class="image me-md-3 mb-3 mb-md-0">
+                <img src="img/forumsf-s.png" alt="image" width="82px" height="90px">
+              </div>
+              <div class="text">
+                <div class="font-weight-bold fs-20 mb-1">Forum Traveller</div>
+                <div class="mb-1">Created at least 1 topic on 5 different groups forums</div>
+                <div class="fs-14 c-gray">UNLOCKED JAN 14TH, 2019</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="d-flex bg-white rounded-10 p-4 flex-column flex-md-row text-center text-md-start align-items-center">
+              <div class="image me-md-3 mb-3 mb-md-0">
+                <img src="img/age-b-big.png" alt="image" width="82px" height="90px">
+              </div>
+              <div class="text">
+                <div class="font-weight-bold fs-20 mb-1">Profile Age</div>
+                <div class="mb-1">Congratz! You've been part of the community for 2 years</div>
+                <div class="fs-14 c-gray">UNLOCKED JAN 14TH, 2019</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="d-flex bg-white rounded-10 p-4 flex-column flex-md-row text-center text-md-start align-items-center">
+              <div class="image me-md-3 mb-3 mb-md-0">
+                <img src="img/mightiers-b-big.png" alt="image" width="82px" height="90px">
+              </div>
+              <div class="text">
+                <div class="font-weight-bold fs-20 mb-1">Mightier Than Sword</div>
+                <div class="mb-1">Wrote at least 50 blog posts in their profile</div>
+                <div class="fs-14 c-gray">UNLOCKED JAN 14TH, 2019</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="d-flex bg-white rounded-10 p-4 flex-column flex-md-row text-center text-md-start align-items-center">
+              <div class="image me-md-3 mb-3 mb-md-0">
+                <img src="img/ncreature-b-big.png" alt="image" width="82px" height="90px">
+              </div>
+              <div class="text">
+                <div class="font-weight-bold fs-20 mb-1">Night Creature</div>
+                <div class="mb-1">Created 100+ posts between 1AM and 5AM</div>
+                <div class="fs-14 c-gray">UNLOCKED JAN 14TH, 2019</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Strat Bageds -->
+      <!-- Start Streams -->
+      <div class="contents stream d-none" id="stream">
+        <div class="row flex-column-reverse flex-xl-row">
+          <div class="col-xl-3">
+            <div class="freiend-box bg-white rounded-10 overflow-hidden position-relative mb-4">
+              <figure style="--bg: url(../img/21.jpg); height: 80px;" class="d-block m-0 main-bg"></figure>
+              <div class="img-person big-img rounded-circle position-relative mb-3 t-duration mx-auto d-flex flex-grow-1 align-items-center justify-content-center w-fit">
+                <img src="img/nft_avatar03.png" class="img-fluid rounded-circle t-duration-de">
+              </div>
+              <div class="px-4 text-center mb-4">
+                <div class="fs-20 font-weight-bold">GameHuntressd</div>
+                <div class="fs-12 c-white text-uppercase rounded-1 w-fit py-1 px-2 mx-auto" style="background-color: #adafca;">offline</div>
+              </div>
+              <div class="px-4 per-info mb-4">
+                <div class="nav flex-grow-1 align-items-center justify-content-center">
+                  <div class="pe-3 me-3 text-center position-relative">
+                    <div class="font-weight-bold fs-12">930</div>
+                    <div class="font-weight-bold fs-12 c-gray text-uppercase">Posts</div>
+                  </div>
+                  <div class="pe-3 text-center position-relative">
+                    <div class="font-weight-bold fs-12">82</div>
+                    <div class="font-weight-bold fs-12 c-gray text-uppercase">FRIENDS</div>
+                  </div>
+                </div>
+              </div>
+              <div class="px-4 mb-4">
+                <a href="#" class="button text-center bg-secondray c-white c-white-hover rounded fs-14 font-weight-bold t-duration pointer fs-14">Subscribe to my Channel!</a>
+              </div>
+            </div>
+            <div class="bg-white p-4 rounded-10">
+              <div class="font-weight-bold mb-4">FAQs</div>
+              <div class="box mb-3">
+                <div class="qusetion-title open-close collasp pointer">
+                  <div class="d-flex align-items-center justify-content-between mb-1">
+                      <div class="font-weight-bold fs-14 ">Do I only play new games?</div>
+                      <div class="plus-minus position-relative w-fit"></div>
+                  </div>
+                </div>
+                <div class="qusetion-dec d-none fs-14">Yes! Join me on my channel's chatbox every saturday and I'll be taking game requests for upcoming streams.</div>
+              </div>
+              <div class="box mb-3">
+                <div class="qusetion-title open-close collasp pointer">
+                  <div class="d-flex align-items-center justify-content-between mb-1">
+                      <div class="font-weight-bold fs-14 ">Do I take stream requests?</div>
+                      <div class="plus-minus position-relative w-fit"></div>
+                  </div>
+                </div>
+                <div class="qusetion-dec d-none fs-14">Yes! Join me on my channel's chatbox every saturday and I'll be taking game requests for upcoming streams.</div>
+              </div>
+              <div class="box mb-3">
+                <div class="qusetion-title open-close collasp pointer">
+                  <div class="d-flex align-items-center justify-content-between mb-1">
+                      <div class="font-weight-bold fs-14 ">What about speedruns?</div>
+                      <div class="plus-minus position-relative w-fit"></div>
+                  </div>
+                </div>
+                <div class="qusetion-dec d-none fs-14">Yes! Join me on my channel's chatbox every saturday and I'll be taking game requests for upcoming streams.</div>
+              </div>
+              <div class="box mb-3">
+                <div class="qusetion-title open-close collasp pointer">
+                  <div class="d-flex align-items-center justify-content-between mb-1">
+                      <div class="font-weight-bold fs-14 ">What's my donations policy?</div>
+                      <div class="plus-minus position-relative w-fit"></div>
+                  </div>
+                </div>
+                <div class="qusetion-dec d-none fs-14">Yes! Join me on my channel's chatbox every saturday and I'll be taking game requests for upcoming streams.</div>
+              </div>
+              <div class="box mb-3">
+                <div class="qusetion-title open-close collasp pointer">
+                  <div class="d-flex align-items-center justify-content-between mb-1">
+                      <div class="font-weight-bold fs-14 ">Do I only play new games?</div>
+                      <div class="plus-minus position-relative w-fit"></div>
+                  </div>
+                </div>
+                <div class="qusetion-dec d-none fs-14">Yes! Join me on my channel's chatbox every saturday and I'll be taking game requests for upcoming streams.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-9 mb-4 mb-xl-0">
+            <div class="streaming bg-white rounded-10 overflow-hidden mb-4">
+              <iframe autocapitalize="true" width="100%" height="500" src="https://www.youtube.com/embed/dijaeWNKHIw"></iframe>
+              <div class="p-4 d-flex flex-column flex-sm-row gap-15 align-items-center">
+                <div class="image">
+                  <img src="img/23.jpg" alt="image" width="60px">
+                </div>
+                <div class="text">
+                  <div class="font-weight-bold fs-20">I'm Playing Athena's Goddess Story - Join me to see all the 12 Goddess' Powers</div>
+                  <div class="fs-14 font-weight-bold mb-1"> Category: <span class="c-primary">Zodiac Goddess</span></div>
+                  <div class="c-gray fs-14">13.6235 Total Views</div>
+              </div>
+            </div>
+          </div>
+          <div class="box bg-white p-4 rounded-10">
+            <div class="font-weight-bold mb-4">Schedule</div>
+            <div class="fs-14">My main stream is Saturday at 9PM but I also make "Let's Play" streams on weekdays. In addition I make special morning streams at 10AM all 1st's, 15th's and 30th's of every month with the lastest gaming news. All times are EDT Eastern Daylight Time</div>
+          </div>
+        </div>
+      </div>
+      <!-- End Streams -->
+      </div>
     <!-- End Content -->
+    <!-- Start Blog -->
+    <div class="contents blog d-none" id="blog">
+      <div class="c-gray fs-14 font-weight-bold text-uppercase">BROWSE MARINA'S></div>
+      <h2 class="font-weight-bold mb-3">Blog Posts <span class="c-primary">5</span></h2>
+      <div class="p-4 d-flex flex-wrap gap-15 justify-content-center bg-white rounded-10 mb-4">
+        <div class="form-input w-fit position-relative d-flex">
+          <label for="promo-code">Search here..</label>
+          <input type="text" class="form-control bg-transparent rounded-10">
+          <a class="button bg-primary translate-middle-x c-white c-white-hover rounded-10 fs-14 font-weight-bold t-duration pointer full text-center d-flex align-items-center justify-content-center h-100">
+            <i class="fa-solid fa-search"></i>
+          </a>
+        </div>
+        <div class="per-info mx-auto d-flex align-items-center">
+          <div class="nav align-items-center justify-content-center">
+            <div class="pe-4 me-4 text-center position-relative">
+              <div class="font-weight-bold">Recently Active</div>
+            </div>
+            <div class="pe-4 me-4 text-center position-relative">
+              <div class="font-weight-bold c-gray pointer c-primary-hover t-duration">Newest Friends</div>
+            </div>
+            <div class="pe-4 me-4 text-center position-relative">
+              <div class="font-weight-bold c-gray pointer c-primary-hover t-duration">Alphabetical</div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-15 align-items-center">
+          <i class="fa-solid fa-table-cells-large fs-20"></i>
+          <i class="fa-solid fa-grip-lines-vertical fs-20 c-gray c-primary-hover t-duratio pointer"></i>
+          <i class="fa-solid fa-bars fs-20 c-gray c-primary-hover t-duratio pointer"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <div class="py-4 rounded-10 bg-white mb-4 overflow-hidden">
+            <div class="px-4 mb-4 d-flex align-items-center">
+              <div class="img-person rounded-circle position-relative me-2">
+                <img src="img/nft_avatar03.png" class="img-fluid rounded-circle">
+                <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12">9</div>
+              </div>
+              <div class="text">
+                <div class="font-weight-bold">SonSAlem</div>
+                <div class="fs-14">5 hours ago</div>
+              </div>
+            </div>
+            <img src="img/cove05.jpg" alt="" height="200px" class="w-100" style="object-fit: cover;">
+            <div class="px-4 share-post-text position-relative">
+              <div class="bg-white rounded-10 p-4 box-shadow">
+                <div class="c-gray font-weight-bold mb-3">5 MINS READ</div>
+                <div class="fs-20 font-weight-bold mb-4">Here's the how and why did I became a full time Gaming Streamer</div>
+                <p class="mb-3 fs-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo.</p>
+                <p class="mb-3 fs-14">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam...</p>
+                <div class="font-weight-bold fs-14">READ MORE...</div>
+              </div>
+            </div>
+            <div class="mx-4 content-actions d-flex py-3 mt-4 border-top border-bottom">
+              <div class="d-flex reacts flex-row">
+                <img src="img/like.png" alt="">
+                <img src="img/love.png" alt="">
+                <img src="img/happy.png" alt="">
+                <span class="ms-3 font-weight-bold fs-14">12</span>
+              </div>
+              <div class="ms-auto font-weight-bold fs-14">13 Comments</div>
+              <div class="ms-3 font-weight-bold fs-14">0 Shares</div>
+            </div>
+            <div class="mx-4 actions d-flex pt-4 justify-content-between">
+              <div class="d-flex box-shadow-hover c-gray t-duration pointer justify-content-center flex-grow-1 py-3 rounded align-items-center">
+                <i class="fa-regular fa-thumbs-up fa-xl"></i>
+                <div class="ms-2 d-none d-sm-block fs-14 font-weight-bold">React!</div>
+              </div>
+              <div class="d-flex box-shadow-hover c-gray t-duration pointer justify-content-center flex-grow-1 py-3 rounded align-items-center">
+                <i class="fa-regular fa-comment fa-xl"></i>
+                <div class="ms-2 d-none d-sm-block fs-14 font-weight-bold">Comment</div>
+              </div>
+              <div class="d-flex box-shadow-hover c-gray t-duration pointer justify-content-center flex-grow-1 py-3 rounded align-items-center">
+                <i class="fa-solid fa-share-nodes fa-xl"></i>
+                <div class="ms-2 d-none d-sm-block fs-14 font-weight-bold">Share</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="py-4 rounded-10 bg-white mb-4 overflow-hidden">
+            <div class="px-4 mb-4 d-flex align-items-center">
+              <div class="img-person rounded-circle position-relative me-2">
+                <img src="img/nft_avatar03.png" class="img-fluid rounded-circle">
+                <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12">9</div>
+              </div>
+              <div class="text">
+                <div class="font-weight-bold">SonSAlem</div>
+                <div class="fs-14">5 hours ago</div>
+              </div>
+            </div>
+            <img src="img/cover06.jpg" alt="" height="200px" class="w-100" style="object-fit: cover;">
+            <div class="px-4 share-post-text position-relative">
+              <div class="bg-white rounded-10 p-4 box-shadow">
+                <div class="c-gray font-weight-bold mb-3">5 MINS READ</div>
+                <div class="fs-20 font-weight-bold mb-4">Here's the how and why did I became a full time Gaming Streamer</div>
+                <p class="mb-3 fs-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo.</p>
+                <p class="mb-3 fs-14">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam...</p>
+                <div class="font-weight-bold fs-14">READ MORE...</div>
+              </div>
+            </div>
+            <div class="mx-4 content-actions d-flex py-3 mt-4 border-top border-bottom">
+              <div class="d-flex reacts flex-row">
+                <img src="img/like.png" alt="">
+                <img src="img/love.png" alt="">
+                <img src="img/happy.png" alt="">
+                <span class="ms-3 font-weight-bold fs-14">12</span>
+              </div>
+              <div class="ms-auto font-weight-bold fs-14">13 Comments</div>
+              <div class="ms-3 font-weight-bold fs-14">0 Shares</div>
+            </div>
+            <div class="mx-4 actions d-flex pt-4 justify-content-between">
+              <div class="d-flex box-shadow-hover c-gray t-duration pointer justify-content-center flex-grow-1 py-3 rounded align-items-center">
+                <i class="fa-regular fa-thumbs-up fa-xl"></i>
+                <div class="ms-2 d-none d-sm-block fs-14 font-weight-bold">React!</div>
+              </div>
+              <div class="d-flex box-shadow-hover c-gray t-duration pointer justify-content-center flex-grow-1 py-3 rounded align-items-center">
+                <i class="fa-regular fa-comment fa-xl"></i>
+                <div class="ms-2 d-none d-sm-block fs-14 font-weight-bold">Comment</div>
+              </div>
+              <div class="d-flex box-shadow-hover c-gray t-duration pointer justify-content-center flex-grow-1 py-3 rounded align-items-center">
+                <i class="fa-solid fa-share-nodes fa-xl"></i>
+                <div class="ms-2 d-none d-sm-block fs-14 font-weight-bold">Share</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="py-4 rounded-10 bg-white mb-4 overflow-hidden">
+            <div class="px-4 mb-4 d-flex align-items-center">
+              <div class="img-person rounded-circle position-relative me-2">
+                <img src="img/nft_avatar03.png" class="img-fluid rounded-circle">
+                <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12">9</div>
+              </div>
+              <div class="text">
+                <div class="font-weight-bold">SonSAlem</div>
+                <div class="fs-14">5 hours ago</div>
+              </div>
+            </div>
+            <img src="img/cover07.jpg" alt="" height="200px" class="w-100" style="object-fit: cover;">
+            <div class="px-4 share-post-text position-relative">
+              <div class="bg-white rounded-10 p-4 box-shadow">
+                <div class="c-gray font-weight-bold mb-3">5 MINS READ</div>
+                <div class="fs-20 font-weight-bold mb-4">Here's the how and why did I became a full time Gaming Streamer</div>
+                <p class="mb-3 fs-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo.</p>
+                <p class="mb-3 fs-14">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam...</p>
+                <div class="font-weight-bold fs-14">READ MORE...</div>
+              </div>
+            </div>
+            <div class="mx-4 content-actions d-flex py-3 mt-4 border-top border-bottom">
+              <div class="d-flex reacts flex-row">
+                <img src="img/like.png" alt="">
+                <img src="img/love.png" alt="">
+                <img src="img/happy.png" alt="">
+                <span class="ms-3 font-weight-bold fs-14">12</span>
+              </div>
+              <div class="ms-auto font-weight-bold fs-14">13 Comments</div>
+              <div class="ms-3 font-weight-bold fs-14">0 Shares</div>
+            </div>
+            <div class="mx-4 actions d-flex pt-4 justify-content-between">
+              <div class="d-flex box-shadow-hover c-gray t-duration pointer justify-content-center flex-grow-1 py-3 rounded align-items-center">
+                <i class="fa-regular fa-thumbs-up fa-xl"></i>
+                <div class="ms-2 d-none d-sm-block fs-14 font-weight-bold">React!</div>
+              </div>
+              <div class="d-flex box-shadow-hover c-gray t-duration pointer justify-content-center flex-grow-1 py-3 rounded align-items-center">
+                <i class="fa-regular fa-comment fa-xl"></i>
+                <div class="ms-2 d-none d-sm-block fs-14 font-weight-bold">Comment</div>
+              </div>
+              <div class="d-flex box-shadow-hover c-gray t-duration pointer justify-content-center flex-grow-1 py-3 rounded align-items-center">
+                <i class="fa-solid fa-share-nodes fa-xl"></i>
+                <div class="ms-2 d-none d-sm-block fs-14 font-weight-bold">Share</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="py-4 rounded-10 bg-white mb-4 overflow-hidden">
+            <div class="px-4 mb-4 d-flex align-items-center">
+              <div class="img-person rounded-circle position-relative me-2">
+                <img src="img/nft_avatar03.png" class="img-fluid rounded-circle">
+                <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12">9</div>
+              </div>
+              <div class="text">
+                <div class="font-weight-bold">SonSAlem</div>
+                <div class="fs-14">5 hours ago</div>
+              </div>
+            </div>
+            <img src="img/cover08.jpg" alt="" height="200px" class="w-100" style="object-fit: cover;">
+            <div class="px-4 share-post-text position-relative">
+              <div class="bg-white rounded-10 p-4 box-shadow">
+                <div class="c-gray font-weight-bold mb-3">5 MINS READ</div>
+                <div class="fs-20 font-weight-bold mb-4">Here's the how and why did I became a full time Gaming Streamer</div>
+                <p class="mb-3 fs-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo.</p>
+                <p class="mb-3 fs-14">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam...</p>
+                <div class="font-weight-bold fs-14">READ MORE...</div>
+              </div>
+            </div>
+            <div class="mx-4 content-actions d-flex py-3 mt-4 border-top border-bottom">
+              <div class="d-flex reacts flex-row">
+                <img src="img/like.png" alt="">
+                <img src="img/love.png" alt="">
+                <img src="img/happy.png" alt="">
+                <span class="ms-3 font-weight-bold fs-14">12</span>
+              </div>
+              <div class="ms-auto font-weight-bold fs-14">13 Comments</div>
+              <div class="ms-3 font-weight-bold fs-14">0 Shares</div>
+            </div>
+            <div class="mx-4 actions d-flex pt-4 justify-content-between">
+              <div class="d-flex box-shadow-hover c-gray t-duration pointer justify-content-center flex-grow-1 py-3 rounded align-items-center">
+                <i class="fa-regular fa-thumbs-up fa-xl"></i>
+                <div class="ms-2 d-none d-sm-block fs-14 font-weight-bold">React!</div>
+              </div>
+              <div class="d-flex box-shadow-hover c-gray t-duration pointer justify-content-center flex-grow-1 py-3 rounded align-items-center">
+                <i class="fa-regular fa-comment fa-xl"></i>
+                <div class="ms-2 d-none d-sm-block fs-14 font-weight-bold">Comment</div>
+              </div>
+              <div class="d-flex box-shadow-hover c-gray t-duration pointer justify-content-center flex-grow-1 py-3 rounded align-items-center">
+                <i class="fa-solid fa-share-nodes fa-xl"></i>
+                <div class="ms-2 d-none d-sm-block fs-14 font-weight-bold">Share</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="py-4 rounded-10 bg-white mb-4 overflow-hidden">
+            <div class="px-4 mb-4 d-flex align-items-center">
+              <div class="img-person rounded-circle position-relative me-2">
+                <img src="img/nft_avatar03.png" class="img-fluid rounded-circle">
+                <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12">9</div>
+              </div>
+              <div class="text">
+                <div class="font-weight-bold">SonSAlem</div>
+                <div class="fs-14">5 hours ago</div>
+              </div>
+            </div>
+            <img src="img/cove09.jpg" alt="" height="200px" class="w-100" style="object-fit: cover;">
+            <div class="px-4 share-post-text position-relative">
+              <div class="bg-white rounded-10 p-4 box-shadow">
+                <div class="c-gray font-weight-bold mb-3">5 MINS READ</div>
+                <div class="fs-20 font-weight-bold mb-4">Here's the how and why did I became a full time Gaming Streamer</div>
+                <p class="mb-3 fs-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo.</p>
+                <p class="mb-3 fs-14">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam...</p>
+                <div class="font-weight-bold fs-14">READ MORE...</div>
+              </div>
+            </div>
+            <div class="mx-4 content-actions d-flex py-3 mt-4 border-top border-bottom">
+              <div class="d-flex reacts flex-row">
+                <img src="img/like.png" alt="">
+                <img src="img/love.png" alt="">
+                <img src="img/happy.png" alt="">
+                <span class="ms-3 font-weight-bold fs-14">12</span>
+              </div>
+              <div class="ms-auto font-weight-bold fs-14">13 Comments</div>
+              <div class="ms-3 font-weight-bold fs-14">0 Shares</div>
+            </div>
+            <div class="mx-4 actions d-flex pt-4 justify-content-between">
+              <div class="d-flex box-shadow-hover c-gray t-duration pointer justify-content-center flex-grow-1 py-3 rounded align-items-center">
+                <i class="fa-regular fa-thumbs-up fa-xl"></i>
+                <div class="ms-2 d-none d-sm-block fs-14 font-weight-bold">React!</div>
+              </div>
+              <div class="d-flex box-shadow-hover c-gray t-duration pointer justify-content-center flex-grow-1 py-3 rounded align-items-center">
+                <i class="fa-regular fa-comment fa-xl"></i>
+                <div class="ms-2 d-none d-sm-block fs-14 font-weight-bold">Comment</div>
+              </div>
+              <div class="d-flex box-shadow-hover c-gray t-duration pointer justify-content-center flex-grow-1 py-3 rounded align-items-center">
+                <i class="fa-solid fa-share-nodes fa-xl"></i>
+                <div class="ms-2 d-none d-sm-block fs-14 font-weight-bold">Share</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End Blog -->
+    </div>
+    <!-- End Blog -->
+    <!-- Start Forums -->
+    <div class="contents forums d-none" id="forums">
+      <div class="c-gray fs-14 font-weight-bold text-uppercase">BROWSE MARINA'S</div>
+      <h2 class="font-weight-bold mb-3">Forum Discussions</h2>
+      <div class="p-4 d-flex flex-wrap gap-15 justify-content-center bg-white rounded-10 mb-4">
+        <div class="form-input w-fit position-relative d-flex">
+          <label for="promo-code">Search here..</label>
+          <input type="text" class="form-control bg-transparent rounded-10">
+          <a class="button bg-primary translate-middle-x c-white c-white-hover rounded-10 fs-14 font-weight-bold t-duration pointer full text-center d-flex align-items-center justify-content-center h-100">
+            <i class="fa-solid fa-search"></i>
+          </a>
+        </div>
+        <div class="per-info mx-auto d-flex align-items-center">
+          <div class="nav align-items-center justify-content-center">
+            <div class="pe-4 me-4 text-center position-relative">
+              <div class="font-weight-bold">Recently Active</div>
+            </div>
+            <div class="pe-4 me-4 text-center position-relative">
+              <div class="font-weight-bold c-gray pointer c-primary-hover t-duration">Newest Friends</div>
+            </div>
+            <div class="pe-4 me-4 text-center position-relative">
+              <div class="font-weight-bold c-gray pointer c-primary-hover t-duration">Alphabetical</div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-15 align-items-center">
+          <i class="fa-solid fa-table-cells-large fs-20"></i>
+          <i class="fa-solid fa-grip-lines-vertical fs-20 c-gray c-primary-hover t-duratio pointer"></i>
+          <i class="fa-solid fa-bars fs-20 c-gray c-primary-hover t-duratio pointer"></i>
+        </div>
+      </div>
+      <div class="overflow-auto">
+        <table class="table table-borderless" style="min-width:900px;">
+          <thead>
+            <tr>
+              <td class="fs-12 pb-2 font-weight-bold">DISCUSSION</td>
+              <td class="fs-12 pb-2 font-weight-bold text-center">VOICES</td>
+              <td class="fs-12 pb-2 font-weight-bold text-center">REPLIES</td>
+              <td class="fs-12 pb-2 font-weight-bold text-center">ACTIVITY</td>
+            </tr>
+          </thead>
+          <thead>
+            <tr>
+              <td class="rounded-11 ps-4 py-4 bg-white">
+                <p class="m-0 font-weight-bold mb-2">The recent issue of "Darkman" features a new masked hero</p>
+                <div class="d-flex">started by
+                  <img src="img/nft_avatar03.png" alt="image"  class="rounded-circle px-2" width="40px">
+                  <span class="font-weight-bold pe-2">Son Salem</span>
+                  22 minutes ago
+                  <span class="px-2">-</span>
+                  <span class="font-weight-bold c-primary">comic</span>
+                </div>
+              </td>
+              <td class="py-4 bg-white font-weight-bold text-center align-middle fs-14">4</td>
+              <td class="py-4 bg-white font-weight-bold text-center align-middle fs-14">12</td>
+              <td class="pe-4 py-4 bg-white rounded-21">
+                <div class="d-flex justify-content-center">
+                  <div class="img-person rounded-circle position-relative me-2">
+                    <img src="img/nft_avatar.png" class="img-fluid rounded-circle">
+                    <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12">9</div>
+                  </div>
+                  <div class="text">
+                    <div class="fs-14 font-weight-bold">Bearded Wonder</div>
+                    <div class="fs-12">3 hours, 22 minutes ago</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="rounded-11 rounded-41 ps-4 py-4 bg-f5">
+                <p class="m-0 font-weight-bold mb-2">The recent issue of "Darkman" features a new masked hero</p>
+                <div class="d-flex">started by
+                  <img src="img/nft_avatar03.png" alt="image"  class="rounded-circle px-2" width="40px">
+                  <span class="font-weight-bold pe-2">Son Salem</span>
+                  22 minutes ago
+                  <span class="px-2">-</span>
+                  <span class="font-weight-bold c-primary">comic</span>
+                </div>
+              </td>
+              <td class="py-4 bg-f5 font-weight-bold text-center align-middle fs-14">4</td>
+              <td class="py-4 bg-f5 font-weight-bold text-center align-middle fs-14">12</td>
+              <td class="pe-4 py-4 bg-f5">
+                <div class="d-flex justify-content-center">
+                  <div class="img-person rounded-circle position-relative me-2">
+                    <img src="img/nft_avatar.png" class="img-fluid rounded-circle">
+                    <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12">9</div>
+                  </div>
+                  <div class="text">
+                    <div class="fs-14 font-weight-bold">Bearded Wonder</div>
+                    <div class="fs-12">3 hours, 22 minutes ago</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="ps-4 py-4 bg-white">
+                <p class="m-0 font-weight-bold mb-2">The recent issue of "Darkman" features a new masked hero</p>
+                <div class="d-flex">started by
+                  <img src="img/nft_avatar03.png" alt="image"  class="rounded-circle px-2" width="40px">
+                  <span class="font-weight-bold pe-2">Son Salem</span>
+                  22 minutes ago
+                  <span class="px-2">-</span>
+                  <span class="font-weight-bold c-primary">comic</span>
+                </div>
+              </td>
+              <td class="py-4 bg-white font-weight-bold text-center align-middle fs-14">4</td>
+              <td class="py-4 bg-white font-weight-bold text-center align-middle fs-14">12</td>
+              <td class="pe-4 py-4 bg-white">
+                <div class="d-flex justify-content-center">
+                  <div class="img-person rounded-circle position-relative me-2">
+                    <img src="img/nft_avatar.png" class="img-fluid rounded-circle">
+                    <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12">9</div>
+                  </div>
+                  <div class="text">
+                    <div class="fs-14 font-weight-bold">Bearded Wonder</div>
+                    <div class="fs-12">3 hours, 22 minutes ago</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="rounded-11 rounded-41 ps-4 py-4 bg-f5">
+                <p class="m-0 font-weight-bold mb-2">The recent issue of "Darkman" features a new masked hero</p>
+                <div class="d-flex">started by
+                  <img src="img/nft_avatar03.png" alt="image"  class="rounded-circle px-2" width="40px">
+                  <span class="font-weight-bold pe-2">Son Salem</span>
+                  22 minutes ago
+                  <span class="px-2">-</span>
+                  <span class="font-weight-bold c-primary">comic</span>
+                </div>
+              </td>
+              <td class="py-4 bg-f5 font-weight-bold text-center align-middle fs-14">4</td>
+              <td class="py-4 bg-f5 font-weight-bold text-center align-middle fs-14">12</td>
+              <td class="pe-4 py-4 bg-f5">
+                <div class="d-flex justify-content-center">
+                  <div class="img-person rounded-circle position-relative me-2">
+                    <img src="img/nft_avatar.png" class="img-fluid rounded-circle">
+                    <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12">9</div>
+                  </div>
+                  <div class="text">
+                    <div class="fs-14 font-weight-bold">Bearded Wonder</div>
+                    <div class="fs-12">3 hours, 22 minutes ago</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="rounded-31 ps-4 py-4 bg-white">
+                <p class="m-0 font-weight-bold mb-2">The recent issue of "Darkman" features a new masked hero</p>
+                <div class="d-flex">started by
+                  <img src="img/nft_avatar03.png" alt="image"  class="rounded-circle px-2" width="40px">
+                  <span class="font-weight-bold pe-2">Son Salem</span>
+                  22 minutes ago
+                  <span class="px-2">-</span>
+                  <span class="font-weight-bold c-primary">comic</span>
+                </div>
+              </td>
+              <td class="py-4 bg-white font-weight-bold text-center align-middle fs-14">4</td>
+              <td class="py-4 bg-white font-weight-bold text-center align-middle fs-14">12</td>
+              <td class="pe-4 py-4 bg-white rounded-41">
+                <div class="d-flex justify-content-center">
+                  <div class="img-person rounded-circle position-relative me-2">
+                    <img src="img/nft_avatar.png" class="img-fluid rounded-circle">
+                    <div class="num-of-mes rounded-circle position-absolute d-flex align-items-center justify-content-center font-weight-bold c-white fs-12">9</div>
+                  </div>
+                  <div class="text">
+                    <div class="fs-14 font-weight-bold">Bearded Wonder</div>
+                    <div class="fs-12">3 hours, 22 minutes ago</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+    <!-- End Forums -->
+    <!-- Start Market -->
+    <div class="contents market d-none" id="market">
+      <div class="c-gray fs-14 font-weight-bold text-uppercase">BROWSE MARINA'S</div>
+      <h2 class="font-weight-bold mb-3">Item Store <span class="c-primary">5</span></h2>
+      <div class="p-4 d-flex flex-wrap gap-15 justify-content-center bg-white rounded-10 mb-4">
+        <div class="form-input w-fit position-relative d-flex">
+          <label for="promo-code">Search here..</label>
+          <input type="text" class="form-control bg-transparent rounded-10">
+          <a class="button bg-primary translate-middle-x c-white c-white-hover rounded-10 fs-14 font-weight-bold t-duration pointer full text-center d-flex align-items-center justify-content-center h-100">
+            <i class="fa-solid fa-search"></i>
+          </a>
+        </div>
+        <div class="per-info mx-auto d-flex align-items-center">
+          <div class="nav align-items-center justify-content-center">
+            <div class="pe-4 me-4 text-center position-relative">
+              <div class="font-weight-bold">Recently Active</div>
+            </div>
+            <div class="pe-4 me-4 text-center position-relative">
+              <div class="font-weight-bold c-gray pointer c-primary-hover t-duration">Newest Friends</div>
+            </div>
+            <div class="pe-4 me-4 text-center position-relative">
+              <div class="font-weight-bold c-gray pointer c-primary-hover t-duration">Alphabetical</div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-15 align-items-center">
+          <i class="fa-solid fa-table-cells-large fs-20"></i>
+          <i class="fa-solid fa-grip-lines-vertical fs-20 c-gray c-primary-hover t-duratio pointer"></i>
+          <i class="fa-solid fa-bars fs-20 c-gray c-primary-hover t-duratio pointer"></i>
+        </div>
+      </div>
+      <div class="grid-4 items">
+        <div class="box pointer rounded-10 overflow-hidden d-flex flex-column">
+        <img src="img/01.jpg" alt="It's An Imae" class="w-100">
+        <div class="text p-4 pt-0 bg-white border-bottom flex-grow-1">
+          <div class="price w-fit px-3 py-1 rounded-5 ms-auto translate-middle-y font-weight-bold bg-white mb-4"><span class="c-primary">$</span> 12.00</div>
+          <div class="font-weight-bold fs-20 mb-2">Twitch Stream UI Pack</div>
+          <div class="d-flex mb-3 align-items-center">
+            <i class="fa-regular fa-circle c-primary me-2 fs-12"></i>
+            <div class="fs-14 font-weight-bold">Stream Packs</div>
+          </div>
+          <div class="fs-14 c-gray mb-3">Awesome hexagon themed stream pack, you can change all colors and...</div>
+        </div>
+        <div class="d-flex p-4 bg-white align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <img src="img/nft_avatar02.png" width="25px" height="25px" class="rounded-circle" alt="It's An Imae">
+            <div class="text ms-3">
+              <div class="fs-12">Posted By</div>
+              <div class="fs-12 font-weight-bold">Ahmed Mamdouh</div>
+            </div>
+          </div>
+          <div class="d-flex stars">
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="far fa-star fs-12"></i>
+          </div>
+        </div>
+      </div>
+        <div class="box pointer rounded-10 overflow-hidden d-flex flex-column">
+        <img src="img/02.jpg" alt="It's An Imae" class="w-100">
+        <div class="text p-4 pt-0 bg-white border-bottom flex-grow-1">
+          <div class="price w-fit px-3 py-1 rounded-5 ms-auto translate-middle-y font-weight-bold bg-white mb-4"><span class="c-primary">$</span> 34.00</div>
+          <div class="font-weight-bold fs-20 mb-2">Jaxxy Witch Black Frame</div>
+          <div class="d-flex mb-3 align-items-center">
+            <i class="fa-regular fa-circle c-primary me-2 fs-12"></i>
+            <div class="fs-14 font-weight-bold">Art Prints</div>
+          </div>
+          <div class="fs-14 c-gray mb-3">30x60 inches fine art print, with glossy paper and a polymer black frame...</div>
+        </div>
+        <div class="d-flex p-4 bg-white align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <img src="img/nft_avatar01.png" width="25px" height="25px" class="rounded-circle" alt="It's An Imae">
+            <div class="text ms-3">
+              <div class="fs-12">Posted By</div>
+              <div class="fs-12 font-weight-bold">Amany Mamdouh</div>
+            </div>
+          </div>
+          <div class="d-flex stars">
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="far fa-star fs-12"></i>
+          </div>
+        </div>
+      </div>
+        <div class="box pointer rounded-10 overflow-hidden d-flex flex-column">
+        <img src="img/03.jpg" alt="It's An Imae" class="w-100">
+        <div class="text p-4 pt-0 bg-white border-bottom flex-grow-1">
+          <div class="price w-fit px-3 py-1 rounded-5 ms-auto translate-middle-y font-weight-bold bg-white mb-4"><span class="c-primary">$</span> 40.00</div>
+          <div class="font-weight-bold fs-20 mb-2">Flaming Skull Team Logo</div>
+          <div class="d-flex mb-3 align-items-center">
+            <i class="fa-regular fa-circle c-primary me-2 fs-12"></i>
+            <div class="fs-14 font-weight-bold">Logos &amp; Badges</div>
+          </div>
+          <div class="fs-14 c-gray mb-3">Get this incredible horned skull logo! It's really easy to change colors with the....</div>
+        </div>
+        <div class="d-flex p-4 bg-white align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <img src="img/nft_avatar02.png" width="25px" height="25px" class="rounded-circle" alt="It's An Imae">
+            <div class="text ms-3">
+              <div class="fs-12">Posted By</div>
+              <div class="fs-12 font-weight-bold">Ahmed Mamdouh</div>
+            </div>
+          </div>
+          <div class="d-flex stars">
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="far fa-star fs-12"></i>
+          </div>
+        </div>
+      </div>
+        <div class="box pointer rounded-10 overflow-hidden d-flex flex-column">
+        <img src="img/04.jpg" alt="It's An Imae" class="w-100">
+        <div class="text p-4 pt-0 bg-white border-bottom flex-grow-1">
+          <div class="price w-fit px-3 py-1 rounded-5 ms-auto translate-middle-y font-weight-bold bg-white mb-4"><span class="c-primary">$</span> 39.00</div>
+          <div class="font-weight-bold fs-20 mb-2">Carbon Black Joystick</div>
+          <div class="d-flex mb-3 align-items-center">
+            <i class="fa-regular fa-circle c-primary me-2 fs-12"></i>
+            <div class="fs-14 font-weight-bold">Electronics</div>
+          </div>
+          <div class="fs-14 c-gray mb-3">Slightly used X-Rock Carbon model joystick. Works perfectly, like the first...</div>
+        </div>
+        <div class="d-flex p-4 bg-white align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <img src="img/goku.jpeg" class="rounded-circle" width="25px" height="25px" alt="It's An Imae">
+            <div class="text ms-3">
+              <div class="fs-12">Posted By</div>
+              <div class="fs-12 font-weight-bold">Ahmed Mamdouh</div>
+            </div>
+          </div>
+          <div class="d-flex stars">
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="far fa-star fs-12"></i>
+          </div>
+        </div>
+      </div>
+        <div class="box pointer rounded-10 overflow-hidden d-flex flex-column">
+        <img src="img/05.jpg" alt="It's An Imae" class="w-100">
+        <div class="text p-4 pt-0 bg-white border-bottom flex-grow-1">
+          <div class="price w-fit px-3 py-1 rounded-5 ms-auto translate-middle-y font-weight-bold bg-white mb-4"><span class="c-primary">$</span> 12.00</div>
+          <div class="font-weight-bold fs-20 mb-2">Emerald Dragon Digital Marketplace</div>
+          <div class="d-flex mb-3 align-items-center">
+            <i class="fa-regular fa-circle c-primary me-2 fs-12"></i>
+            <div class="fs-14 font-weight-bold">HTML Templates</div>
+          </div>
+          <div class="fs-14 c-gray mb-3">Digital marketplace HTML template with all you need to build your own web...</div>
+        </div>
+        <div class="d-flex p-4 bg-white align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <img src="img/nft_avatar02.png" width="25px" height="25px" class="rounded-circle" alt="It's An Imae">
+            <div class="text ms-3">
+              <div class="fs-12">Posted By</div>
+              <div class="fs-12 font-weight-bold">Ahmed Mamdouh</div>
+            </div>
+          </div>
+          <div class="d-flex stars">
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="filled fas fa-star me-1 fs-12"></i>
+            <i class="far fa-star fs-12"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- End Market -->
   </div>
   <!-- End proflile-contents -->
+  </div>
 <script src="js/popper.min.js"></script>
 <!-- JQury Library -->
 <script src="js/jquery.min.js"></script>
 <!-- Boostrap Library -->
 <script src="js/bootstrap.min.js"></script>
-<!-- Animation Libaray And WOW -->
-<script src="js/animation.js"></script>
-<script src="js/wow.min.js"></script>
-<script>new WOW().init();</script>
 <!-- Owl Carsoul Library -->
 <script src="js/owl.carousel.min.js"></script>
 <!-- Main File -->
